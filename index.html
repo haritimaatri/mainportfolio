@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harit Ima Atri | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(135deg,#fad0c4, #ffd1ff) ;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #222;
+            color: white;
+        }
+        .dark-mode .content-box {
+    background: #333;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 0rem;
+        }
+        #dark-mode-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 0rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 5rem 2rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+        .content-box {
+            background: rgb(237, 236, 236);
+            padding: 1rem;
+            margin: 1rem auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .content-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+       
+        #projectss{
+           margin-top: 0rem;
+            margin-left: 590px;
+            margin-bottom: 0rem;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            .content-box {
+                width: 95%;
+            }
+            #profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animated {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="dark-mode-toggle">🌞🌙</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="animated">
+        <img id="profile-img" src="profile .jpg" alt="Harit Ima Atri" style="width: 200px;height: 200px;">
+        <h1>Harit Ima Atri</h1>
+        <p>Web Developer | Cybersecurity Enthusiast | Researcher</p>
+    </section>
+
+    <model-viewer  id="projectss" src="./9_magic_book_-_3december2019.glb" autoplay camera-control> 
+
+    </model-viewer>
+
+    <section id="projects" class="animated">
+        <h2>Projects </h2> 
+        <div class="content-box">
+            <h3>Wiremap (Port Scanner)</h3>
+            <p>A Scapy-based Python script for network security assessment.</p>
+            <a href="https://github.com/haritimaatri/wiremap" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="content-box">
+            <h3>Real-Time Chat Application</h3>
+            <p>Developed with React hooks and Socket.io for real-time messaging.</p>
+            <a href="https://github.com/haritimaatrichat-app" target="_blank">GitHub Repo</a>
+        </div>
+    </section>
+    
+    <section id="publications" class="animated">
+        <h2>Publications</h2>
+        <div class="content-box">Optimization of network mapping for screening and intrusion sensing devices (Springer, 2024)</div>
+        <div class="content-box">Enhancing agriculture productivity through IoT-based devices (YMER, 2024)</div>
+        <div class="content-box">Optimizing network infrastructure for IoT-based agriculture (YMER, 2024)</div>
+    </section>
+    
+    <section id="certifications" class="animated">
+        <h2>Certifications</h2>
+        <div class="content-box">AIG Shields Up: Cybersecurity virtual experience program (2025)</div>
+        <div class="content-box">Mastercard Cybersecurity virtual experience program (2025)</div>
+        <div class="content-box">SMART INDIA HACKATHON (2023)</div>
+        <div class="content-box">AWS Security Learning Plan (2023)</div>
+    </section>
+    
+    <section id="education" class="animated">
+        <h2>Education</h2>
+        <div class="content-box">Master’s in Computer Science 🥇 - Sharda University</div>
+        <div class="content-box">Bachelor in Computer Science - SRM University</div>
+    </section>
+    
+    <section id="skills" class="animated">
+        <h2>Skills</h2>
+        <div class="content-box">HTML, CSS, JavaScript, React, Node.js, Git/GitHub</div>
+        <div class="content-box">C/C++, Python, SQL, Data Visualization</div>
+        <div class="content-box">Project Management, Debugging, Research</div>
+    </section>
+    
+    <section id="resume" class="animated">
+        <h2>Resume</h2>
+        <div class="content-box">
+            <p>Download my resume here:</p>
+            <a class="download-btn" href="Resume.pdf" download="Harit_Ima_Atri_Resume.pdf">📄 Download Resume</a>
+        </div>
+    </section>
+    
+    <section id="contact" class="animated">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:haritimaatri006@gmail.com">haritimaatri006@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/haritimaatri/">linkedin.com/in/haritimaatri</a></p>
+        <p>github: <a href="https://github.com/haritimaatri">github.com/haritimaatri </a></p>
+    </section>
+    
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

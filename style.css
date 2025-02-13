@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+.light-mode {
+    background: #f9f9f9;
+    color: #090909; 
+    
+}
+.dark-mode {
+    background: #222;
+    color: #090909;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center; 
+    height: 100px;
+    background-color: #e5ddd5;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px; 
+    background-color: #e7dcd5fe;
+   
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    color: inherit;
+}
+.resume-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+.social-links {
+    margin-top: 15px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit;
+}
+.switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.slider {
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer; 
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 2px;
+    transition: 0.3s;
+}
+input:checked + .slider::before {
+    left: 20px;
+    background: yellow;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #e7dcd5fe;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+}
+
+/* Strengths & Expertise Section */
+.strengths-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    list-style: none;
+    max-width: 100px;
+    margin: auto;
+}
+
+.strengths-list li {
+  background: #e7dcd5fe;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+
+/* Experience Box */
+.experience-box {
+    border-left: 5px solid #0073e6;
+    padding: 10px;
+    margin-top: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Project Cards */
+.project {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #fafafa;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Floating Animations */
+.floating {
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Theme Toggle */
+.switch {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 10px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background: #0073e6;
+}
+
+.emoji {
+    margin-left: 10px;
+}
+
+/* WhatsApp Style Chat */
+.whatsapp-style {
+    background: #e5ddd5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.chat-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.bot {
+    background: #dcf8c6;
+    align-self: flex-start;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.strengths-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.strengths-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
